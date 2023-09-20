@@ -1,0 +1,32 @@
+header{
+    height: 80px;
+}
+nav{
+    width: 80%;
+    height: 50%;
+}
+.seccion1{
+    height: 100px;
+}
+#caja{
+    height: 80%;
+    width: 20%;
+}
+.seccion2{
+    height: 300px;
+}
+#caja2{
+    height: 80%;
+    width: 20%;
+}
+#caja1{
+    height: 80%;
+    width: 20%;
+}
+#caja3{
+    height: 80%;
+    width: 20%;
+}
+footer{
+    height: 80px;
+}
