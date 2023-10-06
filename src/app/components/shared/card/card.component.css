@@ -1,0 +1,9 @@
+.movies{
+    background-color: #121829;
+    display: flex;
+    justify-content: space-around;
+}
+
+.card-peliculas{
+    margin: 1%;
+}
