@@ -24,32 +24,56 @@ export class HomeComponent {
       name:'Loki',
       description:'',
       image:'../../../../assets/loki.jpeg',
-      rating:8,
+      rating:7,
       category: 'serie'
     },
     {
       id:3,
-      name:'shrek',
+      name:'Avatar',
       description:'',
-      image:'../../../../assets/shrek.jpeg',
-      rating:8,
+      image:'../../../../assets/avatar.jpg',
+      rating:9,
       category: 'movie'
     },
     {
       id:4,
-      name:'shrek',
+      name:'Once Upon A Time',
       description:'',
-      image:'../../../../assets/shrek.jpeg',
-      rating:8,
-      category: 'movie'
+      image:'../../../../assets/onceuponatime.jpg',
+      rating:7.5,
+      category: 'serie'
     },
     {
       id:5,
-      name:'shrek',
+      name:'Shrek 5',
       description:'',
       image:'../../../../assets/shrek.jpeg',
-      rating:8,
+      rating:9,
       category: 'movie'
+    },
+    {
+      id:6,
+      name:'The Big Bang Theory',
+      description:'',
+      image:'../../../../assets/thebigbangtheory.jpg',
+      rating:9.5,
+      category: 'serie'
+    },
+    {
+      id:7,
+      name:'El abogado Del Diablo',
+      description:'',
+      image:'../../../../assets/elabogadodeldiablo.jpg',
+      rating:7,
+      category: 'movie'
+    },
+    {
+      id:8,
+      name:'Breaking Bad',
+      description:'',
+      image:'../../../../assets/BreakingBad.jpeg',
+      rating:9,
+      category: 'serie'
     }
   ];
 
