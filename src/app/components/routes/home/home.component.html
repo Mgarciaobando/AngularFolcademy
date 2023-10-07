@@ -12,9 +12,9 @@
 </div>
 
 <div class="buttom-options">
-    <button type="button" class="btn btn-primary">Todos</button>
-    <button type="button" class="btn btn-primary">Peliculas</button>
-    <button type="button" class="btn btn-primary">Series</button>
+    <button type="button" class="btn" [ngClass]="{'btn-primary': filter=='todos'}" (click)="setFilter('todos')">Todos</button>
+    <button type="button" class="btn" [ngClass]="{'btn-primary': filter=='movie'}"(click)="setFilter('movie')">Peliculas</button>
+    <button type="button" class="btn" [ngClass]="{'btn-primary': filter=='serie'}"(click)="setFilter('serie')">Series</button>
 </div>
 
 <div class="text">
@@ -22,7 +22,11 @@
     <p class="SubAll">(120)</p>
 </div>
 
-
 </div>
 
-<app-card></app-card>
+<div class="movies">
+    <ng-container *ngFor="let movie of movies_series">
+        <app-card *ngIf="filter=='todos' || filter == movie.category" [item]="movie"></app-card>
+    </ng-container>
+    
+</div>

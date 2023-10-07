@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { VideoType } from 'src/app/interfaces/videoType';
 
 @Component({
   selector: 'app-card',
@@ -7,4 +8,7 @@ import { Component } from '@angular/core';
 })
 export class CardComponent {
 
+
+
+@Input() item: VideoType;
 }

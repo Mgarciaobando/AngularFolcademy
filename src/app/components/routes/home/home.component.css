@@ -74,3 +74,14 @@
     margin-left: 5%;
     margin-top: 2%;
 }
+
+.movies{
+    background-color: #121829;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.buttom-options .btn{
+    color: #fff;
+}

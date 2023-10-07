@@ -1,9 +1,21 @@
-.movies{
-    background-color: #121829;
-    display: flex;
-    justify-content: space-around;
-}
-
 .card-peliculas{
     margin: 1%;
+    padding: 10px;
+    background-color: #2b283a;
+    border-radius: 10px;
 }
+
+img{
+    width: 	250px;
+    height: 380px;
+    border-radius: 10px;
+}
+
+span{
+    color: #fff;
+    display: block;
+    margin-block: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
