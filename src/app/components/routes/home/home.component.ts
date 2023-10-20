@@ -1,16 +1,19 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { VideoType } from 'src/app/interfaces/videoType';
+import { MovieDBService } from '../../services/movie-db.service';
+import {map} from 'rxjs';
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css']
+  styleUrls: ['./home.component.css'],
+  providers: [MovieDBService]
 })
-export class HomeComponent {
+export class HomeComponent implements OnInit{
 
   filter:string = "todos";
-
-  movies_series: VideoType[]=[
+  movies_series: VideoType[]=[]
+  movies_series2: VideoType[]=[
     {
       id:1,
       name:'Black Widow',
@@ -77,8 +80,26 @@ export class HomeComponent {
     }
   ];
 
+  constructor(private movieDBService:MovieDBService){
+    
+  }
+
+  ngOnInit(): void {
+    this.movieDBService.getTrending().pipe(
+      map(data => console.log (data))
+    )
+  }
+
   setFilter(newFilter:string){
     this.filter = newFilter;
+  }
+
+  traerInformacion(){
+    this.movieDBService.getTrending().subscribe({
+      next:(valores)=>{
+        console.log(valores)
+      }
+    })
   }
 
 
