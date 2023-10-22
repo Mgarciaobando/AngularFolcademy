@@ -1,21 +1,23 @@
 .card-peliculas{
-    margin: 1%;
+    margin: 0.1%;
     padding: 10px;
     background-color: #2b283a;
     border-radius: 10px;
+    /* height: 85%; */
 }
 
 img{
     width: 	250px;
     height: 380px;
     border-radius: 10px;
+    object-fit: cover;
 }
 
 span{
     color: #fff;
     display: block;
-    margin-block: 20px;
     font-size: 20px;
     font-weight: bold;
+    object-fit:contain;
 }
 

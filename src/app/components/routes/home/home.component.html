@@ -28,7 +28,6 @@
     <ng-container *ngFor="let movie of movies_series">
         <app-card *ngIf="filter=='todos' || filter == movie.category" [item]="movie"></app-card>
     </ng-container>
-
-    <button (click)="traerInformacion()">hola</button>
+    
     
 </div>

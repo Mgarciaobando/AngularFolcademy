@@ -10,5 +10,5 @@ export class CardComponent {
 
 
 
-@Input() item: VideoType;
+@Input() item: any;
 }

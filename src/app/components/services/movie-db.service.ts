@@ -10,7 +10,7 @@ export class MovieDBService {
 
   apiUrl: string = 'https://api.themoviedb.org/3';
 
-  token: "eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJiYWZhMmM5YzJmY2VkZjIxMDk3NDAwMjkxNGNhODQzMiIsInN1YiI6IjY1MmZlN2JmYTgwMjM2MDBjMzE2ODE2MSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ._kY1TXXjn00yS9DepRfh5Z1FagXirtsDSPnSVpMOUWo";
+  token:string = "eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJiYWZhMmM5YzJmY2VkZjIxMDk3NDAwMjkxNGNhODQzMiIsInN1YiI6IjY1MmZlN2JmYTgwMjM2MDBjMzE2ODE2MSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ._kY1TXXjn00yS9DepRfh5Z1FagXirtsDSPnSVpMOUWo";
 
   constructor(
     private _https: HttpClient
