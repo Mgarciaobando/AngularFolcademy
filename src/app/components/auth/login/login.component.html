@@ -1,0 +1,31 @@
+<div class="h-custom-screen w-full background-custom-primary">
+    <div class="d-flex h-100 justify-content-center align-items-center">
+        <div class="row">
+            <div class="col-6">
+                <img src="../../../../assets/Frame 83.png" class="w-50 h-100" alt="imagen login">
+            </div>
+            <div class="col-6">
+                <form autocomplete="off" [formGroup]="loginFormGroup" (ngSubmit)="leerDatos()">
+                <div class="d-flex flex-column justify-content-center gap-4">
+                    <h1 class="text-white text-start">Ingresar</h1>
+
+                    <div class="d-flex flex-column gap-3">
+
+                        <input formControlName="email" class="text-white background-custom" autocomplete="off" type="email" placeholder="Email">
+                        <input formControlName="password" class="text-white background-custom" autocomplete="off" type="password" placeholder="contraseña">
+                    </div>
+
+                    <div class="text-white">No tienes una cuenta? 
+                        <span class="">
+                            <a class="text-link-register link-register">Registrar</a>
+                        </span>
+                    </div>
+                    <button [disabled]="loginFormGroup.invalid" type="submit" class="text-white btn-custom btn-primary">
+                        Ingresar
+                    </button>
+                </div>
+            </form>
+            </div>
+        </div>
+    </div>
+</div>

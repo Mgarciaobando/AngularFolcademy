@@ -1,0 +1,39 @@
+.background-custom-primary{
+    background-color: #121829;
+}
+.h-custom-screen{
+    height: 90vh;
+}
+
+.text-link-register{
+    color: #2D9CDB;
+}
+
+.btn-custom{
+    background-color: #7B6EF6;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+}
+button:disabled{
+    background-color: gray;
+}
+.background-custom{
+    border: 1px solid #475069;
+    border-radius: 10px;
+    padding: 15px 10px;
+    background-color: transparent;
+    outline: none;
+    text-decoration: none;
+}
+
+.link-register{
+    text-decoration: none;
+    cursor: pointer;
+}
+.link-register:hover{
+    text-decoration: underline;
+}
+input::placeholder{
+    color: white;
+}

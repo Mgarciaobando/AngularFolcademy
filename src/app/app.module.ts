@@ -7,7 +7,8 @@ import { LayoutModule } from './components/layout/layout.module';
 import { RouterModule } from '@angular/router';
 import { SharedModule } from './components/shared/shared.module';
 import { RoutesModule } from './components/routes/routes.module';
-import { HttpClient, HttpClientModule} from '@angular/common/http'
+import { HttpClient, HttpClientModule} from '@angular/common/http';
+import { AuthModule } from './components/auth/auth.module';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,9 @@ import { HttpClient, HttpClientModule} from '@angular/common/http'
     RouterModule,
     SharedModule,
     RoutesModule,
-    HttpClientModule
+    HttpClientModule,
+    AuthModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]
